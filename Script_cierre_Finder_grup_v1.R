@@ -5,7 +5,6 @@ library(tidyverse)
 Alertas_para_cierre <- read_excel("Alertas_para_cierre.xlsx", sheet = "Hoja1")
 Alertas_para_cierre<- as.data.frame(Alertas_para_cierre)
 Alertas_para_cierre$Fecha_de_generacion= as.Date(Alertas_para_cierre$Fecha_de_generacion)
-#Alertas_para_cierre <-Alertas_para_cierre[501:nrow(Alertas_para_cierre),]
 datos_prueba_1= datos_prueba %>% filter(Nro_de_identificacion %in% Alertas_para_cierre$Nro_de_identificacion )
 print(nrow(datos_prueba_1))
 ##funciones
