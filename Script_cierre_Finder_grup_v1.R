@@ -30,7 +30,6 @@ library(wdman)
 #selenium()
 #objeto_selenium<- selenium(retcommand =T, check = F)
 #
-
 #binman::list_versions("chromedriver")
 Sys.sleep(2)
 #4567L port = 4577L ,
