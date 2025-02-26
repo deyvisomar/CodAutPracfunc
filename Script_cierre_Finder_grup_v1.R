@@ -1,12 +1,6 @@
-# script cierre finder recurrentes
+
 load("datos_prueba.RData")
-library(readxl)
-library(tidyverse)
-Alertas_para_cierre <- read_excel("Alertas_para_cierre.xlsx", sheet = "Hoja1")
-Alertas_para_cierre<- as.data.frame(Alertas_para_cierre)
-Alertas_para_cierre$Fecha_de_generacion= as.Date(Alertas_para_cierre$Fecha_de_generacion)
-datos_prueba_1= datos_prueba %>% filter(Nro_de_identificacion %in% Alertas_para_cierre$Nro_de_identificacion )
-print(nrow(datos_prueba_1))
+
 ##funciones
 my_update_function <- function(x){
   tryCatch(
@@ -22,28 +16,8 @@ my_update_function <- function(x){
     }
   )
 }
-######### SELENIUM ##########
-library(RSelenium)
-library(wdman)
-#library(netstat)
-#selenium()
-#objeto_selenium<- selenium(retcommand =T, check = F)
 #
-#binman::list_versions("chromedriver")
-Sys.sleep(2)
-#4567L port = 4577L ,
-# rsDriver(check = FALSE)
-#remote_driver<- rsDriver(browser = "chrome", port = 4577L ,chromever = "131.0.6778.108", verbose = FALSE)
-remote_driver<- rsDriver(check = FALSE)
-Sys.sleep(20)
-# CONEXION A FINDER
-remDr<-   remote_driver$client
-Sys.sleep(3)
-#remDr$open()
-remDr$navigate("https://vfindersrv/Account/Login")
-Sys.sleep(3)
-#
-for (k in 3:nrow(users)) {
+for (k in 1:nrow(users)) {
   Alertas_para_cierre_1<- Alertas_para_cierre %>% filter(usuario==users$name[k])
   datos_prueba<- datos_prueba_1 %>% filter(Nro_de_identificacion %in% Alertas_para_cierre_1$Nro_de_identificacion )
   print(paste("alertas para cierre:", nrow(datos_prueba)))
