@@ -1,0 +1,658 @@
+https://rpubs.com/hllinas/R_Logit_Binario_RocCurve
+
+##libro shiny
+https://mastering-shiny.org/basic-reactivity.html
+
+## conexion googlesheets4 con shiny
+https://stackoverflow.com/questions/63535190/connect-to-googlesheets-via-shiny-in-r-with-googlesheets4
+
+# conexion sql
+https://solutions.posit.co/connections/db/databases/microsoft-sql-server/
+
+# conexion odbc para excel
+https://docs.cpp.canon/help?tsm=ODP000060-1.4.1.0ES.ES&pageid=GUID-38A3119F-9AEC-4979-8370-ECAD377EF70B.xml
+
+### SIBIL
+PASWORD: Estadistico671$
+
+## ejemplo de una conexion basica
+https://stackoverflow.com/questions/43748010/use-shiny-app-to-query-a-sql-server-db
+
+## cambiar de idiomar en Rmarkdown
+https://stackoverflow.com/questions/45770231/change-the-caption-title-of-a-figure-in-markdown
+
+## LIBRERIA TABALS EDITABLES library(editbl)
+https://stackoverflow.com/questions/75967173/how-do-i-make-a-simple-user-editable-table-in-an-r-shiny-app-using-modular-desig
+
+
+## Deyvis por si acaso te copio la nomenclatura
+FAM FAMILIAR DE UN PEPN
+PEPE PERSONA EXPUESTA POLITICAMENTE EXTRANJERA
+PEPM PERSONA EXPUESTA POLITICAMENTE MUNICIPAL
+PEPN PERSONA EXPUESTA POLITICAMENTE NACIONAL
+PPE PERSONA PUBLICAMENTE EXPUESTA
+PEPB PERSONA EXPUESTA POLITICAMENTE QUE RADICA EN BOLIVIA
+PJN PERSONA JURIDICA NACIONAL
+PPEG PERSONA PUBLICAMENTE EXPUESTA DE INTERES GENERAL
+PPES PERSONA PUBLICAMENTE EXPUESTA DEL SECTOR PRIVADO
+PPEI PERSONA PUBLICAMENTE EXPUESTA INTERNACIONAL
+PPES PERSONA PUBLICAMENTE EXPUESTA SOCIALES [‎17/‎10/‎2023 15:15]  Dennis Marcio Vasquez Millan:  
+el antepeultimo esta mal es PPEP PERSONA PUBLICAMENTE EXPUESTA DEL SECTOR PRIVADO 
+ 
+ 
+##### enlace dashboard
+#PRINCIPAL mapa
+https://domq671est.shinyapps.io/Dsh1223_Mapa_Riesgos_v2/
+# MATRIZ DE CAPACITACION
+https://domq671est.shinyapps.io/ShDash_MatCap_12_23/
+## temas de valu box en shiny dashboard
+
+https://rstudio.github.io/bslib/reference/value_box.html
+
+
+
+
+#### libro Rstudio y opciones de grafico con high
+
+https://tables.investigaonline.com/tse-formateo#operaciones-con-tablas
+
+
+#### dashboard de accidentes
+https://domq671est.shinyapps.io/REPORTE_ACCIDENTES/
+
+#### dashboard de control de actividades
+https://domq671est.shinyapps.io/Dsh_CtrlAct_v1/
+
+#### control de actividades
+https://domq671est.shinyapps.io/Dsh_CtrlAct_v1/
+
+### Actividades diarias
+https://domq671est.shinyapps.io/Actividades_diarias/
+
+####  Dashboard Directores
+https://domq671est.shinyapps.io/Dash_CarpDigDir/
+
+## Evaluaciones
+#oficial
+https://bancosol.shinyapps.io/Eval_vf/
+# oficial tipo 2
+https://bancosol.shinyapps.io/EvaluacionesSe2/
+
+##### clientes juridicos
+https://bancosol.shinyapps.io/clientes/
+
+######## mapa juridicas
+https://bancosol.shinyapps.io/mapa_clientes/
+
+## Respuestas
+https://domq671est.shinyapps.io/Respuestas/
+#oficial
+https://bancosol.shinyapps.io/RespuestasV1/
+
+## Respuestas capacitacion continua
+https://bancosol.shinyapps.io/ResCapContinua/
+
+## BuscadorBDN
+https://domq671est.shinyapps.io/BuscadorBDN/
+#oficial
+https://bancosol.shinyapps.io/BuscadorBDN/
+
+## actividades diarias
+https://domq671est.shinyapps.io/Actividades_diarias/
+### formulario de registro
+# actual
+https://bancosol.shinyapps.io/RegActInd6/
+
+
+#### REgistro CNF
+#formulario
+https://domq671est.shinyapps.io/RegistroCNFv1/
+#vista
+https://bancosol.shinyapps.io/VistaCNF/
+
+###### COORDENADAS
+https://www.coordenadas-gps.com/
+
+### pagina de inicio a csss con shiny y otras librerias interesantes para shiny como shinydashboardplus
+https://engineering-shiny.org/css.html
+## ejemplo shinydashboard
+https://dgranjon.shinyapps.io/shinydashboardPlusDemo/
+
+## PARA CREAR TOKENS Y CONEXION CON GOOGLESHEETS4
+https://stackoverflow.com/questions/63535190/connect-to-googlesheets-via-shiny-in-r-with-googlesheets4
+
+##### Dashboard de reportes automaticos
+https://bancosol.shinyapps.io/Report_Aut/
+
+
+### página que ayudará con shinysurvey
+https://cran.r-project.org/web/packages/shinysurveys/vignettes/surveying-shinysurveys.html
+https://www.jdtrat.com/blog/multi-paged-shinysurvey/
+https://www.jdtrat.com/blog/shinysurveys-0-2-0/
+
+## para convertir imagenes
+https://clasicwebtools.com/articulos/programacion/host-fotos-GDrive.html
+
+## para shinymanagement
+https://datastorm-open.github.io/shinymanager/
+
+## libro R for data science 2da edicion
+https://r4ds.hadley.nz/intro
+
+## relacionado a shinymanager
+https://stackoverflow.com/questions/66521212/how-to-secure-a-tow-file-shinyapp-using-shinymanager
+
+## guia de shiny io
+https://docs.posit.co/shinyapps.io/index.html
+
+## guia de shinysurvey
+https://shinysurveys.jdtrat.com/articles/surveying-shinysurveys.html
+
+
+## CARGAS LABORALES
+https://bancosol.shinyapps.io/Dsh_CtrlActiv_v15/
+
+###shiny io dmamaniq
+Estadistico671&$&00
+
+### enlace powerBi 
+https://bancosol.shinyapps.io/Tarjetas_pres/
+
+############# accesos para fiba
+Enlace del programa: https://cpe.instructure.com/
+
+Nombre de usuario: deyvisomarmq@gmail.com
+
+Contraseña: n3ek4z54
+
+
+
+
+QR_1
+#principal capacitacion
+https://bancosol.shinyapps.io/Capacitacion/
+## reales
+https://bancosol.shinyapps.io/Capacitacion_Cuest_1_vf/
+# 2
+https://bancosol.shinyapps.io/Capacitacion_Cuest_2_vf/
+# 3
+https://bancosol.shinyapps.io/Capacitacion_Cuest_3_vf/
+# 4
+https://bancosol.shinyapps.io/Capacitacion_Cuest_4_vf/
+# 5
+https://bancosol.shinyapps.io/Capacitacion_Cuest_5_vf/
+# 6
+https://bancosol.shinyapps.io/Capacitacion_Cuest_6_vf/
+
+
+## modelo DJ
+https://bancosol.shinyapps.io/RegForm_DJ/
+
+
+## apuesta copa america
+https://bancosol.shinyapps.io/Trivia_America/
+
+
+
+
+##
+https://www.goal.com/es/apuestas/argentina-vs-ecuador-apuestas-pronostico-copa-america-2024-05-07-24/blt81f64a5f9461d618
+
+
+## para resumir parrafos
+https://ahrefs.com/es/writing-tools/summarizer
+
+
+## acceso carpeta compartida BDN
+\\vfatcamsrv\archivosclientes 
+
+##
+http://vfatcamsrv:8089/Seguridad_Usuarios.aspx 
+
+
+### ENLACE PARA WEBINARS CON CREDITOS
+https://www.acfcs.org/webinars 
+
+## archivo excel para asignar alertas diarias
+#antiguo
+https://bsolbo-my.sharepoint.com/:x:/r/personal/cperezg_bancosol_com_bo/_layouts/15/Doc.aspx?sourcedoc=%7BC45394DC-0C30-4B5F-A5D6-FB2F42394820%7D&file=Asignaci%C3%B3n%20de%20alertas%202024.xlsx&action=default&mobileredirect=true
+#antiguo 1
+https://bsolbo-my.sharepoint.com/:x:/r/personal/cperezg_bancosol_com_bo/_layouts/15/Doc.aspx?sourcedoc=%7BE2B23209-772C-4C64-9AD9-C3EF15345A3F%7D&file=Asignaci%25u00f3n%20de%20alertas%202024.xlsx&wdLOR=cF6226ECC-332D-4F7A-89B7-842A94E4D864&fromShare=true&action=default&mobileredirect=true&CID=94AD5564-2927-4F94-9C90-1D8218D9AC77
+#nuevo
+https://bsolbo-my.sharepoint.com/:x:/r/personal/cperezg_bancosol_com_bo/_layouts/15/Doc.aspx?sourcedoc=%7BCC771780-8D14-4150-BA4E-1C8D8DE01220%7D&file=Distribuci%25u00f3n%20de%20DD%20y%20Alertas.xlsx&wdLOR=c4B03865E-30EA-4B39-9C11-1DF794FD5D9D&fromShare=true&action=default&mobileredirect=true
+
+
+
+##databriks
+https://adb-1770393953602906.6.azuredatabricks.net/login.html?o=1770393953602906&tuuid=42262b2d-13ba-4e4c-a1bb-1f3546304956
+
+
+## ADD LINEAS EN LEAFLET
+https://forum.posit.co/t/leaflet-add-multipe-polylines-to-map/96925/9
+
+### para RSelenium
+https://docs.ropensci.org/RSelenium/reference/remoteDriver-class.html
+http://cran.nexr.com/web/packages/RSelenium/vignettes/RSelenium-basics.html
+
+### puertos para Rselenium
+https://stackoverflow.com/questions/48595858/run-yaml-file-for-parallel-selenium-test-from-r-or-python
+
+## envío de correo electronico con R
+https://cran.r-project.org/web/packages/Microsoft365R/vignettes/outlook.html
+
+## envío de correo electronico con R y shiny
+https://cran.r-project.org/web/packages/Microsoft365R/vignettes/shiny.html
+
+### manejo de errores
+https://cran.r-project.org/web/packages/tryCatchLog/vignettes/tryCatchLog-intro.html
+
+### databriks
+https://adb-1770393953602906.6.azuredatabricks.net/login.html?o=1770393953602906&tuuid=6e489edd-637c-4a11-9799-f9f4c8da2ce7
+### diccionario de datos
+https://apps.powerapps.com/play/e/default-799ec06b-11b6-4308-90e0-8d75e21b0111/a/f6e84843-7fda-4f6f-8b49-b1841e20bdf8?tenantId=799ec06b-11b6-4308-90e0-8d75e21b0111&hint=69b1c89e-059e-4b41-8923-2fe8cd795d3f&sourcetime=1704308560876
+
+
+
+
+
+## CODIGO ID PRUEBA
+3223302
+
+## PRUEBA PARA TRANSACCIONES [can_maestro_transacciones]
+DECLARE @FechaDesde DATE = '2023-06-01'
+DECLARE @FechaHasta DATE = '2025-12-31'
+SELECT  *
+  FROM [ods].[can_maestro_transacciones]
+  WHERE [codPersona]=901475 AND [fechaTransaccion]>= @FechaDesde AND [fechaTransaccion]<= @FechaHasta
+  ORDER BY [fechaTransaccion] desc
+
+## cliente con saldo activo
+DECLARE @FechaDesde DATE = '2024-01-01';
+
+WITH added_row_number AS (
+  SELECT
+  *,
+  ROW_NUMBER() OVER(PARTITION BY [descTipoOperacion] ORDER BY [fechaUltimoMovimiento] DESC) AS row_number
+FROM [ods].[cap_productos]
+/*WHERE [codPersona]=3223302*/
+)
+SELECT
+  *
+FROM added_row_number
+WHERE row_number = 1 AND  [fechaUltimoMovimiento] >= @FechaDesde
+##
+DECLARE @FechaHasta DATE = '2024-09-08'
+SELECT  *
+  FROM [ods].[cap_productos]
+  WHERE [codPersona]=3223302 
+  ORDER BY [fechaultimoMovimiento] desc
+
+##para productos individuales
+SELECT
+  *,
+  ROW_NUMBER() OVER(PARTITION BY [descTipoOperacion] ORDER BY [fechaUltimoMovimiento] DESC) AS row_number
+FROM [ods].[cap_productos]
+WHERE [codPersona]=3223302    
+
+## para los creditos que el cliente tiene
+WITH added_row_number AS (
+  SELECT
+  *,
+  ROW_NUMBER() OVER(PARTITION BY [codPersona],[operacion] ORDER BY [fechaProceso] DESC) AS row_number
+FROM [ods].[col_productos]
+WHERE [codPersona]=2904700
+)
+SELECT
+  *
+FROM added_row_number
+WHERE row_number = 1 
+ORDER BY [fechaProceso] DESC
+
+########### desde viz_clientes
+WITH added_row_number AS (
+  SELECT
+  *,
+  ROW_NUMBER() OVER(PARTITION BY [codPersona] ORDER BY [fechaAnalisis] DESC) AS row_number
+FROM [ods].[viz_clientes]
+/*WHERE [codPersona] IN  (3223302,2269771)*/
+)
+SELECT
+  *
+FROM added_row_number
+WHERE row_number = 1 
+ORDER BY [fechaAnalisis] DESC
+
+######### regionales de clientes
+declare @Fechadesde DATE='2024-9-30';
+SELECT [fechaAnalisis]
+      ,[codPersona]
+      ,[tarjetaDebito]
+      ,[bancaMovil]
+      ,[codRegional]
+      ,[regional]
+      ,[codAgencia]
+      ,[agencia]
+      ,[edad]
+  FROM [ods].[viz_clientes]
+  WHERE [fechaAnalisis] >= @Fechadesde 
+  order by [fechaAnalisis] desc
+
+############### consulta de productos y saldos
+  DECLARE @FechaDesde DATE = '2024-01-01';
+
+WITH added_row_number AS (
+  SELECT
+  [codPersona]
+      ,[cuentaCliente]
+      ,[codRegional]
+      ,[regional]
+      ,[codAgencia]
+      ,[agencia]
+      ,[moneda]
+      ,[descMoneda]
+      ,[papel]
+      ,[operacion]
+      ,[suboperacion]
+      ,[tipoOperacion]
+      ,[descTipoOperacion]
+      ,[modulo]
+      ,[descModulo]
+      ,[numeroCuenta]
+	  ,[formaManejo]
+      ,[fechaApertura]
+      ,[fechaVencimientoRenovacion]
+      ,[fechaUltimoMovimiento]
+      ,[plazo]
+      ,[periodo]
+      ,[saldoMonedaOrigen]
+      ,[saldoBs]
+      ,[canalApertura]
+  ,
+  ROW_NUMBER() OVER(PARTITION BY [codPersona],[descTipoOperacion] ORDER BY [cuentaCliente],[fechaUltimoMovimiento] DESC) AS row_number
+FROM [ods].[cap_productos]
+WHERE [codPersona] IN (3223302,1498217)
+)
+SELECT
+  [codPersona]
+      ,[cuentaCliente]
+      ,[codRegional]
+      ,[regional]
+      ,[codAgencia]
+      ,[agencia]
+      ,[moneda]
+      ,[descMoneda]
+      ,[papel]
+      ,[operacion]
+      ,[suboperacion]
+      ,[tipoOperacion]
+      ,[descTipoOperacion]
+      ,[modulo]
+      ,[descModulo]
+      ,[numeroCuenta]
+	  ,[formaManejo]
+      ,[fechaApertura]
+      ,[fechaVencimientoRenovacion]
+      ,[fechaUltimoMovimiento]
+      ,[plazo]
+      ,[periodo]
+      ,[saldoMonedaOrigen]
+      ,[saldoBs]
+      ,[canalApertura]
+FROM added_row_number
+WHERE row_number = 1 AND  [fechaUltimoMovimiento] >= @FechaDesde
+order by [codPersona]
+######################## DESEMBOLSOS #
+  DECLARE @FechaDesde DATE = '2021-01-01';
+  SELECT *
+  FROM [ods].[col_desembolsos]
+  where[fechaDesembolso] >= @FechaDesde
+
+########## cartera
+SELECT *
+  FROM [ods].[mkt_bcsv_cartera]
+
+################### desde viz_productos
+DECLARE @FechaDesde DATE = '2023-01-01';
+  WITH added_row_number AS (
+  SELECT
+  *,
+  ROW_NUMBER() OVER(PARTITION BY [codPersona],[idProducto] ORDER BY [codPersona] desc ,[fechaAnalisis] DESC) AS row_number
+FROM [ods].[viz_productos]
+WHERE [codPersona] IN (3223302,1498217)
+)
+SELECT
+  *
+FROM added_row_number
+WHERE row_number = 1  AND  [fechaAnalisis] >= @FechaDesde
+order by [codPersona]
+
+ANALISTA	REGIONAL
+EPAZ	        OCCIDENTE
+EVALLEJOS	CENTRO
+RFLORESR	ORIENTE
+MALDANA	        ORIENTE
+ETORRICOS	SUR
+DMIRANDAC	EL ALTO
+EPAZ	        P. DEFECTO
+DJORDAN	        ORIENTE
+
+### contraseña UIF
+Estad671$&
+
+
+### ENLACE ENCUESTA
+https://surveydmq.shinyapps.io/Encuesta_v2/
+## enlace 2
+https://bancosol.shinyapps.io/Enc_dm_V2/
+## enlace mapa
+https://bancosol.shinyapps.io/mapa_v1_DMQ/
+
+
+
+
+## posibloe solucion a rselenium
+https://github.com/ropensci/RSelenium/issues/189
+
+
+
+
+
+
+
+
+
+djordan  oriente  15//
+etorricos     sur
+epaz      occidente
+evallejos      centro
+
+
+## transacciones datalake
+DECLARE @FechaDesde DATE = '2025-02-01'
+SELECT  [numeroFila]
+      ,[fechaProceso]
+      ,[fechaTransaccion]
+      ,[codPersona]
+      ,[cuentaCliente]
+      ,[codAgenciaTransaccion]
+      ,[descAgenciaTransaccion]
+      ,[codRegionalTransaccion]
+      ,[descRegionalTransaccion]
+      ,[modulo]
+      ,[transaccion]
+      ,[relacion]
+      ,[ordinal]
+      ,[descOrdinal]
+      ,[subordinal]
+      ,[operacion]
+      ,[subOperacion]
+      ,[descEstadoTransaccion]
+      ,[descModuloTransaccion]
+      ,[codConceptoMovimiento]
+      ,[descConceptoMovimiento]
+      ,[descDebeHaber]
+      ,[horaTransaccion]
+      ,[descMonedaOriginal]
+      ,[importeOriginal]
+      ,[importeBs]
+      ,[importeSus]
+      ,[codModuloProducto]
+      ,[descModuloProducto]
+      ,[codTipoOperProducto]
+      ,[descTipoOperProducto]
+      ,[codAgenciaProducto]
+      ,[descAgenciaProducto]
+      ,[codRegionalProducto]
+      ,[descRegionalProducto]
+      ,[codRubro]
+      ,[descripcionRubro]
+      ,[descCanal]
+      ,[tipoCanal]
+      ,[subTipoCanal]
+      ,[codigoTipoTransaccion]
+      ,[tipoTransaccionGrupo]
+      ,[tipoTransaccionSubgrupo]
+      ,[latitud]
+      ,[longitud]
+      ,[deltaPartition]
+      ,[cuentaAltoke]
+  FROM [ods].[can_detalle_transacciones]
+  where [fechaTransaccion]>= @FechaDesde
+
+########## para datos informe
+SELECT 
+    p.[codPersona],
+    p.[codPaisDocumento],
+    p.[paisDocumento],
+    p.[codTipoDocumento],
+    p.[tipoDocumento],
+    p.[numeroDocumento],
+    p.[complemento],
+    p.[codTipoPersona],
+    p.[tipoPersona],
+    p.[apellidoPaterno],
+    p.[apellidoMaterno],
+    p.[nombres],
+    p.[codPaisNacimiento],
+    p.[paisNacimiento],
+    p.[lugarNacimiento],
+    p.[fechaNacimiento],
+    p.[edad],
+    p.[fechaAltaPersona],
+    p.[cliente],
+    p.[listaGris],
+    p.[listaNegra],
+    p.[vencimientoCI],
+    p.[fatca],
+    p.[propiedadDinero],
+    p.[clasificacionPersona],
+    p.[relacionComercial],
+    c.[actividadEconomica],
+    l.[ingresoPromedioMensual],
+    d.[direccion]
+FROM 
+    [ods].[cli_personas_naturales] p
+JOIN 
+    [ods].[cli_cuenta_cliente] c
+    ON p.[codPersona] = c.[codPersona]
+JOIN 
+    [ods].[cli_datos_laborales_principal] l
+    ON p.[codPersona] = l.[codPersona]
+JOIN 
+    [ods].[cli_datos_contactabilidad] d
+    ON p.[codPersona] = d.[codPersona]
+
+WHERE 
+    p.[codPersona] IN ('2935564', '3743848');
+
+########### productos 
+WITH MovimientosOrdenados AS (
+    SELECT
+        [codPersona],         -- ID del cliente
+        [numeroCuenta],       -- Número
+        [fechaUltimoMovimiento]  -- Fecha 
+      ,[fechaApertura]
+		,[saldoMonedaOrigen]
+      ,[saldoBs]
+      ,[saldoSus]
+	  ,[cuentaCliente]
+      ,[codRegional]
+      ,[regional]
+      ,[codAgencia]
+      ,[agencia]
+      ,[rubroContable]
+      ,[rubroContableReducido]
+      ,[moneda]
+      ,[descMoneda]
+      ,[cuentaActiva]
+      ,[tarjetaDebito]
+      ,[canalApertura]
+      ,[personaInstitucional]
+      ,[cuentaAltoke]
+      ,[fechaMigracionAltoke]
+      ,[fechaAperturaMigracion],
+	  [descTipoOperacion]
+      ,[modulo]
+      ,[descModulo]
+	  
+      ,[codEstadoProducto]
+      ,[descEstadoProducto],
+        ROW_NUMBER() OVER (PARTITION BY [codPersona],[numeroCuenta] ORDER BY [fechaUltimoMovimiento] DESC) AS rn
+    FROM [ods].[cap_productos] -- 
+)
+SELECT
+    [codPersona],
+    [numeroCuenta],
+    [fechaUltimoMovimiento]
+      ,[fechaApertura],
+	[saldoMonedaOrigen]
+      ,[saldoBs]
+      ,[saldoSus]
+	  ,[cuentaCliente]
+      ,[codRegional]
+      ,[regional]
+      ,[codAgencia]
+      ,[agencia]
+      ,[rubroContable]
+      ,[rubroContableReducido]
+      ,[moneda]
+      ,[descMoneda]	  
+      ,[cuentaActiva]
+      ,[tarjetaDebito]
+      ,[canalApertura]
+      ,[personaInstitucional]
+      ,[cuentaAltoke]
+      ,[fechaMigracionAltoke]
+      ,[fechaAperturaMigracion]
+	  ,[descTipoOperacion]
+      ,[modulo]
+      ,[descModulo]
+      ,[codEstadoProducto]
+      ,[descEstadoProducto]
+FROM MovimientosOrdenados
+WHERE rn = 1 and [codPersona]=2935564;
+
+### video DJ
+https://bsolbo-my.sharepoint.com/personal/dmamaniq_bancosol_com_bo/_layouts/15/stream.aspx?id=%2Fpersonal%2Fdmamaniq%5Fbancosol%5Fcom%5Fbo%2FDocuments%2FEJEMPLO%5FDJ%2Emp4&ga=1&referrer=StreamWebApp%2EWeb&referrerScenario=AddressBarCopied%2Eview%2Eb2d452ee%2D2007%2D4370%2Db3df%2Dee22684b3d3a
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
