@@ -77,6 +77,7 @@ fechas<-as.POSIXct(unlist(py$received_times), format = "%Y-%m-%d %H:%M:%S", tz =
 #
 bodi<- gsub("[\n\r\t]", "", py$bodies)
 cadenas_limpias <- paste(gsub("(<).*$", "\\1", bodi),"Enviado a la hora:", fechas)
+cadenas_reducidas <- gsub("El dom,.*", "", cadenas_limpias)
 #posicion <- str_locate(bodi, "El dom")[1]
 # Extrae la cadena
 #bodi <- str_sub(cadena, 1, posicion + 5)
@@ -117,6 +118,18 @@ codigo_python <- paste(
   "import os",
   "import win32com.client",
   "",
+  "# Función para extraer destinatarios y CC con correos",
+  "def obtener_destinatarios_info(mensaje):",
+  "    destinatarios = []",
+  "    cc = []",
+  "    for i in range(1, mensaje.Recipients.Count + 1):",
+  "        r = mensaje.Recipients.Item(i)",
+  "        if r.Type == 1:  # Para",
+  "            destinatarios.append(f\"{r.Name} <{r.Address}>\")",
+  "        elif r.Type == 2:  # CC",
+  "            cc.append(f\"{r.Name} <{r.Address}>\")",
+  "    return destinatarios, cc",
+  "",
   "# Iniciar Outlook",
   "outlook = win32com.client.Dispatch(\"Outlook.Application\").GetNamespace(\"MAPI\")",
   "",
@@ -143,32 +156,36 @@ codigo_python <- paste(
   "for mensaje in mensajes_recibidos:",
   "    try:",
   "        if mensaje.Class == 43 and mensaje.ConversationID == conversation_id:",
+  "            destinatarios_info, cc_info = obtener_destinatarios_info(mensaje)",
   "            correos_relacionados.append({",
   "                \"tipo\": \"recibido\",",
   "                \"asunto\": mensaje.Subject,",
-  "                \"remitente\": mensaje.SenderName,",
-  "                \"destinatario\": mensaje.To,",
+  "                \"remitente\": f\"{mensaje.SenderName} <{mensaje.SenderEmailAddress}>\",",
+  "                \"destinatario\": destinatarios_info,",
+  "                \"cc\": cc_info,",
   "                \"fecha\": mensaje.ReceivedTime,",
   "                \"cuerpo\": mensaje.Body,",
   "                \"adjuntos\": mensaje.Attachments",
   "            })",
-  "    except:",
+  "    except Exception as e:",
   "        pass",
   "",
   "# Enviados",
   "for mensaje in mensajes_enviados:",
   "    try:",
   "        if mensaje.Class == 43 and mensaje.ConversationID == conversation_id:",
+  "            destinatarios_info, cc_info = obtener_destinatarios_info(mensaje)",
   "            correos_relacionados.append({",
-  "                \"tipo\": \"enviado2\",",
+  "                \"tipo\": \"enviado\",",
   "                \"asunto\": mensaje.Subject,",
-  "                \"remitente\": mensaje.SenderName,",
-  "                \"destinatario\": mensaje.To,",
+  "                \"remitente\": f\"{mensaje.SenderName} <{mensaje.SenderEmailAddress}>\",",
+  "                \"destinatario\": destinatarios_info,",
+  "                \"cc\": cc_info,",
   "                \"fecha\": mensaje.SentOn,",
   "                \"cuerpo\": mensaje.Body,",
   "                \"adjuntos\": mensaje.Attachments",
   "            })",
-  "    except:",
+  "    except Exception as e:",
   "        pass",
   "",
   "# -------- ORDENAR LOS CORREOS POR FECHA --------",
@@ -185,15 +202,16 @@ codigo_python <- paste(
   "# Mostrar detalles de cada correo",
   "for i, correo in enumerate(correos_relacionados, 1):",
   "    print(f\"\\n--- Correo #{i} ---\")",
-  "    print(f\"Tipo: {\"Recibido\" if correo[\"tipo\"] == \"recibido\" else \"Enviado\"}\")",
-  "    print(f\"Asunto: {correo[\"asunto\"]}\")",
-  "    print(f\"De: {correo[\"remitente\"]}\")",
-  "    print(f\"Para: {correo[\"destinatario\"]}\")",
-  "    print(f\"Fecha: {correo[\"fecha\"]}\")",
+  "    print(f\"Tipo: {'Recibido' if correo['tipo'] == 'recibido' else 'Enviado'}\")",
+  "    print(f\"Asunto: {correo['asunto']}\")",
+  "    print(f\"De: {correo['remitente']}\")",
+  "    print(f\"Para: {', '.join(correo['destinatario'])}\")",
+  "    print(f\"CC: {', '.join(correo['cc'])}\")",
+  "    print(f\"Fecha: {correo['fecha']}\")",
   "    print(\"Cuerpo:\")",
   "    print(correo[\"cuerpo\"][:500])  # Solo muestra los primeros 500 caracteres",
   "    print(\"-\" * 60)",
-  "    ",
+  "",
   "    # Verificar y mostrar los archivos adjuntos",
   "    if correo[\"adjuntos\"].Count > 0:",
   "        print(\"\\nArchivos adjuntos:\")",
@@ -201,15 +219,68 @@ codigo_python <- paste(
   "            adjunto = correo[\"adjuntos\"].Item(j)",
   "            archivo_nombre = adjunto.FileName",
   "            print(f\"  - {archivo_nombre}\")",
-  "            ",
+  "",
   "            # Guardar el adjunto en la carpeta local",
-  "          #  adjunto.SaveAsFile(os.path.join(carpeta_adjuntos, archivo_nombre))",
+  "            # adjunto.SaveAsFile(os.path.join(carpeta_adjuntos, archivo_nombre))",
   "        print(\"-\" * 60)"
   , sep = "\n")
 
 
-py_run_string(codigo_python)
 
+py_run_string(codigo_python)
+py$correo
+relacionados<-py$correos_relacionados
+relacionados[[3]]$fecha
+relacionados_limpios <- lapply(relacionados, function(item) {
+  item$cuerpo <- gsub("[\r\n]+\\s*", " ", item$cuerpo)
+  item$cuerpo <- gsub("[\n\r\t]", " ", item$cuerpo)
+  item$cuerpo <- gsub("El [a-z]{3},.*", "", item$cuerpo)
+  item$cuerpo <- gsub("Enviado a la hora:.*", "", item$cuerpo)
+  item$cuerpo <- gsub("De:.*", "", item$cuerpo)
+  
+  item$cuerpo <- trimws(item$cuerpo)
+  return(item)
+})
+relacionados_limpios <- lapply(relacionados_limpios, function(item) {
+  # Aseguramos que la fecha tenga zona horaria válida
+  if (!is.null(item$fecha) && is.character(item$fecha)) {
+    item$fecha <- as.POSIXct(item$fecha, tz = "GMT")  # o "UTC"
+  } else if (inherits(item$fecha, "POSIXt")) {
+    attr(item$fecha, "tzone") <- "GMT"  # usar una zona reconocida, sin cambiar hora
+  }
+  
+  # Creamos un campo adicional con la fecha formateada para mostrar
+  if (!is.null(item$fecha)) {
+    item$fecha_mostrar <- format(item$fecha, "%d/%m/%Y %H:%M")
+  } else {
+    item$fecha_mostrar <- NA  # en caso de que no haya fecha
+  }
+  
+  return(item)
+})
+relacionados_limpios[[3]]$fecha
+relacionados_limpios[[3]]$cuerpo
+relacionados_limpios[[3]]$fecha_mostrar
+relacionados_limpios[[3]]$destinatario
+names(relacionados_limpios[[3]])
+relacionados_limpios <- lapply(relacionados_limpios, function(x) {
+  x$destinatario <- paste(x$destinatario, collapse = "; ")
+  x$cc <- paste(x$cc, collapse = "; ")
+  x$cc <- paste(x$cc, collapse = "; ")
+  x$cc <- paste(x$cc, collapse = "; ")
+  return(x)
+})
+
+#
+relacionados_limpios_validos <- Filter(function(x) is.list(x) && !inherits(x, "python.builtin.object"), relacionados_limpios)
+df_correos <- do.call(rbind, lapply(relacionados_limpios_validos, function(x) {
+  x <- lapply(x, function(elem) {
+    # Convertir todo a texto para evitar errores
+    if (!is.atomic(elem)) return(toString(elem))
+    return(elem)
+  })
+  as.data.frame(x, stringsAsFactors = FALSE)
+}))
 
 
 
